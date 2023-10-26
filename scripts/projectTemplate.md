@@ -9,4 +9,12 @@
 
 {{ serviceOverview }}
 
+#### 担当業務
+
+{{ jobResponsibilities }}
+
+#### 使用技術
+
+{{ technologies }}
+
 </details>
