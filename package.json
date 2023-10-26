@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "0.1.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gen": "ts-node scripts/generateMd.ts"
   },
   "devDependencies": {
     "@types/mustache": "^4.2.4",
