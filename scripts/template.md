@@ -3,3 +3,7 @@
 ## 基本情報
 
 {{ baseInformation }}
+
+## 参画プロジェクト
+
+{{{ projects }}}
