@@ -23,5 +23,39 @@
 
 動画・ライブ配信プラットフォーム上で AI キャラクターが 24 時間配信を行うエンタメコンテンツ。
 
+#### 担当業務
+
+- 配信で用いる発話内容生成用 API の開発
+- 配信で用いる発話内容の情報源や画像などを管理するための Web アプリケーション構築全般
+
+
+#### 使用技術
+
+##### 言語
+
+Python,TypeScript
+
+##### IaaS
+
+AWS
+
+##### DB
+
+Amazon DynamoDB
+
+##### フレームワーク・主要ライブラリ
+
+FastAPI,React,AWS CDK
+
+##### IaaS 内サービス
+
+AWS Lambda,Amazon ECR,Amazon DynamoDB,Amazon SQS,Amazon API Gateway,Amazon S3,Amazon CloudFront,AWS CloudFormation,Amazon CloudWatch,AWS IAM
+
+##### その他
+
+OpenAI API,GitHub Actions,Docker,Slack Incoming Webhook
+
+
+
 </details>
 
