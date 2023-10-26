@@ -1,0 +1,34 @@
+[
+  {
+    "startAt": "2023-08",
+    "endAt": null,
+    "title": "AI キャラクターによる 24 時間配信システム",
+    "serviceOverview": "動画・ライブ配信プラットフォーム上で AI キャラクターが 24 時間配信を行うエンタメコンテンツ。",
+    "jobResponsibilities": [
+      "配信で用いる発話内容生成用 API の開発",
+      "配信で用いる発話内容の情報源や画像などを管理するための Web アプリケーション構築全般"
+    ],
+    "technologies": {
+      "languages": { "main": ["Python", "TypeScript"] },
+      "iaas": { "main": ["AWS"] },
+      "db": { "main": ["Amazon DynamoDB"] },
+      "mainFrameworks": { "main": ["FastAPI", "React", "AWS CDK"] },
+      "iaasServices": {
+        "main": [
+          "AWS Lambda",
+          "Amazon ECR",
+          "Amazon DynamoDB",
+          "Amazon SQS",
+          "Amazon API Gateway",
+          "Amazon S3",
+          "Amazon CloudFront",
+          "AWS CloudFormation",
+          "Amazon CloudWatch",
+          "AWS IAM"
+        ]
+      },
+      "otherMainTools": { "main": ["GitHub Actions", "Docker"] },
+      "otherServices": { "main": ["OpenAI API", "Slack Incoming Webhook"] }
+    }
+  }
+]
