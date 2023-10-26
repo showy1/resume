@@ -9,26 +9,28 @@
       "配信で用いる発話内容の情報源や画像などを管理するための Web アプリケーション構築全般"
     ],
     "technologies": {
-      "languages": { "main": ["Python", "TypeScript"] },
-      "iaas": { "main": ["AWS"] },
-      "db": { "main": ["Amazon DynamoDB"] },
-      "mainFrameworks": { "main": ["FastAPI", "React", "AWS CDK"] },
-      "iaasServices": {
-        "main": [
-          "AWS Lambda",
-          "Amazon ECR",
-          "Amazon DynamoDB",
-          "Amazon SQS",
-          "Amazon API Gateway",
-          "Amazon S3",
-          "Amazon CloudFront",
-          "AWS CloudFormation",
-          "Amazon CloudWatch",
-          "AWS IAM"
-        ]
-      },
-      "otherMainTools": { "main": ["GitHub Actions", "Docker"] },
-      "otherServices": { "main": ["OpenAI API", "Slack Incoming Webhook"] }
+      "languages": ["Python", "TypeScript"],
+      "iaas": ["AWS"],
+      "db": ["Amazon DynamoDB"],
+      "mainFrameworks": ["FastAPI", "React", "AWS CDK"],
+      "iaasServices": [
+        "AWS Lambda",
+        "Amazon ECR",
+        "Amazon DynamoDB",
+        "Amazon SQS",
+        "Amazon API Gateway",
+        "Amazon S3",
+        "Amazon CloudFront",
+        "AWS CloudFormation",
+        "Amazon CloudWatch",
+        "AWS IAM"
+      ],
+      "others": [
+        "OpenAI API",
+        "GitHub Actions",
+        "Docker",
+        "Slack Incoming Webhook"
+      ]
     }
   }
 ]
