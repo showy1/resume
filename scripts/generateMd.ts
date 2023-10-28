@@ -21,7 +21,6 @@ const technologyPropertyAndNameMap = new Map<keyof Technologies, string>([
 class MdGenerator {
   private template: string;
   private projectTemplate: string;
-  private technologiesTemplate: string;
 
   constructor() {
     this.template = readFileSync(`${__dirname}/template.md`, "utf-8");
@@ -29,20 +28,6 @@ class MdGenerator {
       `${__dirname}/projectTemplate.md`,
       "utf-8"
     );
-
-    let t = "";
-    for (const [key, value] of technologyPropertyAndNameMap) {
-      t += Mustache.render(
-        "##### {{ value }}\n\n{{ open }} {{ key }} {{ close }}\n\n",
-        {
-          value,
-          key,
-          open: "{{",
-          close: "}}",
-        }
-      );
-    }
-    this.technologiesTemplate = t;
   }
 
   run() {
@@ -67,10 +52,7 @@ class MdGenerator {
       output += Mustache.render(this.projectTemplate, {
         ...e,
         jobResponsibilities: this.arrToMd(e.jobResponsibilities),
-        technologies: Mustache.render(
-          this.technologiesTemplate,
-          e.technologies
-        ),
+        technologies: this.convTechnologiesToMd(e.technologies),
       });
     }
     return output;
@@ -80,6 +62,14 @@ class MdGenerator {
     let output = "";
     for (const e of arr) {
       output += `- ${e}\n`;
+    }
+    return output;
+  }
+
+  private convTechnologiesToMd(technologies: Technologies) {
+    let output = "";
+    for (const [k, v] of technologyPropertyAndNameMap) {
+      output += `- ${v}: ${technologies[k].join(", ")}\n`;
     }
     return output;
   }

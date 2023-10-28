@@ -31,30 +31,12 @@
 
 #### 使用技術
 
-##### 言語
-
-Python,TypeScript
-
-##### IaaS
-
-AWS
-
-##### DB
-
-Amazon DynamoDB
-
-##### フレームワーク・主要ライブラリ
-
-FastAPI,React,AWS CDK
-
-##### IaaS 内サービス
-
-AWS Lambda,Amazon ECR,Amazon DynamoDB,Amazon SQS,Amazon API Gateway,Amazon S3,Amazon CloudFront,AWS CloudFormation,Amazon CloudWatch,AWS IAM
-
-##### その他
-
-OpenAI API,GitHub Actions,Docker,Slack Incoming Webhook
-
+- 言語: Python, TypeScript
+- IaaS: AWS
+- DB: Amazon DynamoDB
+- フレームワーク・主要ライブラリ: FastAPI, React, AWS CDK
+- IaaS 内サービス: AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM
+- その他: OpenAI API, GitHub Actions, Docker, Slack Incoming Webhook
 
 
 </details>
