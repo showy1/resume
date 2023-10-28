@@ -36,7 +36,38 @@
 - DB: Amazon DynamoDB
 - フレームワーク・主要ライブラリ: FastAPI, React, AWS CDK
 - IaaS 内サービス: AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM
-- その他: OpenAI API, GitHub Actions, Docker, Slack Incoming Webhook
+- その他: OpenAI API, GitHub Actions, Docker, Slack, Material UI
+
+
+</details>
+<details>
+<summary>
+
+### NFT コンテンツの開発 (2022-11 ~ 2023-08)
+
+</summary>
+
+#### サービス概要
+
+オリジナルの SF 作品を基にした NFT コンテンツの提供。
+
+#### 担当業務
+
+- ERC721, ERC1155 に準拠した NFT コントラクトの開発
+- Web サイトからの NFT Mint 機能の実装
+- Web サイト上での複数コントラクトの NFT 管理機能の実装
+- microCMS を利用した記事投稿・管理機能の実装
+- Web サイトの UI 実装
+
+
+#### 使用技術
+
+- 言語: TypeScript, Solidity
+- IaaS: GCP
+- DB: PostgreSQL
+- フレームワーク・主要ライブラリ: NestJS, Next.js, Hardhat
+- IaaS 内サービス: Cloud Storage, Cloud SQL, (Cloud Run, Compute Engine)
+- その他: GraphQL, web3-react, MetaMask, Prisma, Tailwind CSS, Docker, Vercel, microCMS, OpenSea, (GitHub Actions, Terraform, Cloud Build, Infura)
 
 
 </details>

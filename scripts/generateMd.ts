@@ -69,9 +69,17 @@ class MdGenerator {
   private convTechnologiesToMd(technologies: Technologies) {
     let output = "";
     for (const [k, v] of technologyPropertyAndNameMap) {
-      output += `- ${v}: ${technologies[k].join(", ")}\n`;
+      output += `- ${v}: ${this.convTechArrsToStr(technologies[k])}\n`;
     }
     return output;
+  }
+
+  private convTechArrsToStr(t: { main: string[]; sub?: string[] }) {
+    let elmsStr = t.main.join(", ");
+    if (t.sub) {
+      elmsStr += `, (${t.sub.join(", ")})`;
+    }
+    return elmsStr;
   }
 }
 

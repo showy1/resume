@@ -9,28 +9,70 @@
       "配信で用いる発話内容の情報源や画像などを管理するための Web アプリケーション構築全般"
     ],
     "technologies": {
-      "languages": ["Python", "TypeScript"],
-      "iaas": ["AWS"],
-      "db": ["Amazon DynamoDB"],
-      "mainFrameworks": ["FastAPI", "React", "AWS CDK"],
-      "iaasServices": [
-        "AWS Lambda",
-        "Amazon ECR",
-        "Amazon DynamoDB",
-        "Amazon SQS",
-        "Amazon API Gateway",
-        "Amazon S3",
-        "Amazon CloudFront",
-        "AWS CloudFormation",
-        "Amazon CloudWatch",
-        "AWS IAM"
-      ],
-      "others": [
-        "OpenAI API",
-        "GitHub Actions",
-        "Docker",
-        "Slack Incoming Webhook"
-      ]
+      "languages": { "main": ["Python", "TypeScript"] },
+      "iaas": { "main": ["AWS"] },
+      "db": { "main": ["Amazon DynamoDB"] },
+      "mainFrameworks": { "main": ["FastAPI", "React", "AWS CDK"] },
+      "iaasServices": {
+        "main": [
+          "AWS Lambda",
+          "Amazon ECR",
+          "Amazon DynamoDB",
+          "Amazon SQS",
+          "Amazon API Gateway",
+          "Amazon S3",
+          "Amazon CloudFront",
+          "AWS CloudFormation",
+          "Amazon CloudWatch",
+          "AWS IAM"
+        ]
+      },
+      "others": {
+        "main": [
+          "OpenAI API",
+          "GitHub Actions",
+          "Docker",
+          "Slack",
+          "Material UI"
+        ]
+      }
+    }
+  },
+  {
+    "startAt": "2022-11",
+    "endAt": "2023-08",
+    "title": "NFT コンテンツの開発",
+    "serviceOverview": "オリジナルの SF 作品を基にした NFT コンテンツの提供。",
+    "jobResponsibilities": [
+      "ERC721, ERC1155 に準拠した NFT コントラクトの開発",
+      "Web サイトからの NFT Mint 機能の実装",
+      "Web サイト上での複数コントラクトの NFT 管理機能の実装",
+      "microCMS を利用した記事投稿・管理機能の実装",
+      "Web サイトの UI 実装"
+    ],
+    "technologies": {
+      "languages": { "main": ["TypeScript", "Solidity"] },
+      "iaas": { "main": ["GCP"] },
+      "db": { "main": ["PostgreSQL"] },
+      "mainFrameworks": { "main": ["NestJS", "Next.js", "Hardhat"] },
+      "iaasServices": {
+        "main": ["Cloud Storage", "Cloud SQL"],
+        "sub": ["Cloud Run", "Compute Engine"]
+      },
+      "others": {
+        "main": [
+          "GraphQL",
+          "web3-react",
+          "MetaMask",
+          "Prisma",
+          "Tailwind CSS",
+          "Docker",
+          "Vercel",
+          "microCMS",
+          "OpenSea"
+        ],
+        "sub": ["GitHub Actions", "Terraform", "Cloud Build", "Infura"]
+      }
     }
   }
 ]
