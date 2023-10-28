@@ -71,4 +71,92 @@
 
 
 </details>
+<details>
+<summary>
+
+### ユーザーと対話可能な AI キャラクターの開発 (2022-11 ~ )
+
+</summary>
+
+#### サービス概要
+
+AI キャラクターの育成・コミュニケーション体験などのエンタメコンテンツの提供。
+
+#### 担当業務
+
+- FastAPI&#x2F;Python による API の開発
+- 大規模言語モデルや MeCab などを利用した自然言語処理
+- AWS Lambda, DynamoDB などを用いたサーバーレスアプリケーションの構築
+
+
+#### 使用技術
+
+- 言語: Python, C#
+- IaaS: AWS
+- DB: Amazon DynamoDB, Redis
+- フレームワーク・主要ライブラリ: FastAPI
+- IaaS 内サービス: AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon ElastiCache, Amazon API Gateway, AWS CloudFormation, Amazon CloudWatch, AWS IAM
+- その他: MeCab, Unity, Serverless Framework, GitHub Actions, Docker, OpenAI API, Azure OpenAI Service, Slack, (Blender)
+
+
+</details>
+<details>
+<summary>
+
+### 医療翻訳通話情報管理システムの開発 (2021-05 ~ 2022-10)
+
+</summary>
+
+#### サービス概要
+
+医療機関における外国人患者の診療の際に使用できる医療翻訳通話システムの提供。
+
+#### 担当業務
+
+- Go による GraphQL API の開発
+- React, TypeScript, Tailwind CSS を用いた管理画面の開発
+
+
+#### 使用技術
+
+- 言語: Go, TypeScript
+- IaaS: AWS
+- DB: PostgreSQL
+- フレームワーク・主要ライブラリ: gqlgen, React
+- IaaS 内サービス: Amazon S3, (Amazon EC2, Amazon RDS)
+- その他: Relay, BitBucket, SendGrid
+
+
+</details>
+<details>
+<summary>
+
+### 企業向け健康管理サービスの開発 (2021-01 ~ 2022-10)
+
+</summary>
+
+#### サービス概要
+
+健康診断結果の管理、健康診断予約情報の管理、ストレスチェックの実施・結果管理などの機能を有する Web サービスの提供。
+
+#### 担当業務
+
+- Django&#x2F;Python, Vue.js&#x2F;TypeScript&#x2F;JavaScript を用いた Web アプリケーションの開発
+- GCP, Nginx などを用いたインフラ構築
+- Bitbucket Pipelines を用いた CI パイプライン構築
+- ストレスチェックや健康診断結果の分析機能の開発
+- PM や CS (カスタマーサクセス) からの課題ヒアリングと、それに基づく設計・実装
+
+
+#### 使用技術
+
+- 言語: Python, TypeScript, JavaScript
+- IaaS: GCP
+- DB: MySQL
+- フレームワーク・主要ライブラリ: Django, Vue.js
+- IaaS 内サービス: Compute Engine, Cloud SQL, Cloud Storage
+- その他: Pandas, Storybook, Sass, BitBucket Pipelines, BitBucket, Nginx, SendGrid, Jira
+
+
+</details>
 

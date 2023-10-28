@@ -74,5 +74,102 @@
         "sub": ["GitHub Actions", "Terraform", "Cloud Build", "Infura"]
       }
     }
+  },
+  {
+    "startAt": "2022-11",
+    "endAt": null,
+    "title": "ユーザーと対話可能な AI キャラクターの開発",
+    "serviceOverview": "AI キャラクターの育成・コミュニケーション体験などのエンタメコンテンツの提供。",
+    "jobResponsibilities": [
+      "FastAPI/Python による API の開発",
+      "大規模言語モデルや MeCab などを利用した自然言語処理",
+      "AWS Lambda, DynamoDB などを用いたサーバーレスアプリケーションの構築"
+    ],
+    "technologies": {
+      "languages": { "main": ["Python", "C#"] },
+      "iaas": { "main": ["AWS"] },
+      "db": { "main": ["Amazon DynamoDB", "Redis"] },
+      "mainFrameworks": { "main": ["FastAPI"] },
+      "iaasServices": {
+        "main": [
+          "AWS Lambda",
+          "Amazon ECR",
+          "Amazon DynamoDB",
+          "Amazon ElastiCache",
+          "Amazon API Gateway",
+          "AWS CloudFormation",
+          "Amazon CloudWatch",
+          "AWS IAM"
+        ]
+      },
+      "others": {
+        "main": [
+          "MeCab",
+          "Unity",
+          "Serverless Framework",
+          "GitHub Actions",
+          "Docker",
+          "OpenAI API",
+          "Azure OpenAI Service",
+          "Slack"
+        ],
+        "sub": ["Blender"]
+      }
+    }
+  },
+  {
+    "startAt": "2021-05",
+    "endAt": "2022-10",
+    "title": "医療翻訳通話情報管理システムの開発",
+    "serviceOverview": "医療機関における外国人患者の診療の際に使用できる医療翻訳通話システムの提供。",
+    "jobResponsibilities": [
+      "Go による GraphQL API の開発",
+      "React, TypeScript, Tailwind CSS を用いた管理画面の開発"
+    ],
+    "technologies": {
+      "languages": { "main": ["Go", "TypeScript"] },
+      "iaas": { "main": ["AWS"] },
+      "db": { "main": ["PostgreSQL"] },
+      "mainFrameworks": { "main": ["gqlgen", "React"] },
+      "iaasServices": {
+        "main": ["Amazon S3"],
+        "sub": ["Amazon EC2", "Amazon RDS"]
+      },
+      "others": { "main": ["Relay", "BitBucket", "SendGrid"] }
+    }
+  },
+  {
+    "startAt": "2021-01",
+    "endAt": "2022-10",
+    "title": "企業向け健康管理サービスの開発",
+    "serviceOverview": "健康診断結果の管理、健康診断予約情報の管理、ストレスチェックの実施・結果管理などの機能を有する Web サービスの提供。",
+    "jobResponsibilities": [
+      "Django/Python, Vue.js/TypeScript/JavaScript を用いた Web アプリケーションの開発",
+      "GCP, Nginx などを用いたインフラ構築",
+      "Bitbucket Pipelines を用いた CI パイプライン構築",
+      "ストレスチェックや健康診断結果の分析機能の開発",
+      "PM や CS (カスタマーサクセス) からの課題ヒアリングと、それに基づく設計・実装"
+    ],
+    "technologies": {
+      "languages": { "main": ["Python", "TypeScript", "JavaScript"] },
+      "iaas": { "main": ["GCP"] },
+      "db": { "main": ["MySQL"] },
+      "mainFrameworks": { "main": ["Django", "Vue.js"] },
+      "iaasServices": {
+        "main": ["Compute Engine", "Cloud SQL", "Cloud Storage"]
+      },
+      "others": {
+        "main": [
+          "Pandas",
+          "Storybook",
+          "Sass",
+          "BitBucket Pipelines",
+          "BitBucket",
+          "Nginx",
+          "SendGrid",
+          "Jira"
+        ]
+      }
+    }
   }
 ]
