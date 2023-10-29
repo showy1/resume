@@ -40,38 +40,31 @@ class MdGenerator {
 
   private convBaseInformationToMd() {
     let output = tableHeaderMd;
-    for (const e of baseInformation) {
-      output += `| ${e.key} | ${e.value} |\n`;
-    }
-    return output;
+    let rows = baseInformation.map((e) => `| ${e.key} | ${e.value} |`);
+    return output + rows.join("\n");
   }
 
   private convProjectsToMd() {
     let output = "";
     for (const e of projects) {
-      output += Mustache.render(this.projectTemplate, {
-        ...e,
-        jobResponsibilities: this.arrToMd(e.jobResponsibilities),
-        technologies: this.convTechnologiesToMd(e.technologies),
-      });
+      output +=
+        Mustache.render(this.projectTemplate, {
+          ...e,
+          jobResponsibilities: this.arrToMd(e.jobResponsibilities),
+          technologies: this.convTechnologiesToMd(e.technologies),
+        }) + "\n";
     }
     return output;
   }
 
   private arrToMd(arr: string[]) {
-    let output = "";
-    for (const e of arr) {
-      output += `- ${e}\n`;
-    }
-    return output;
+    return arr.map((e) => `- ${e}`).join("\n");
   }
 
   private convTechnologiesToMd(technologies: Technologies) {
-    let output = "";
-    for (const [k, v] of technologyPropertyAndNameMap) {
-      output += `- ${v}: ${this.convTechArrsToStr(technologies[k])}\n`;
-    }
-    return output;
+    return [...technologyPropertyAndNameMap]
+      .map(([k, v]) => `- ${v}: ${this.convTechArrsToStr(technologies[k])}`)
+      .join("\n");
   }
 
   private convTechArrsToStr(t: { main: string[]; sub?: string[] }) {

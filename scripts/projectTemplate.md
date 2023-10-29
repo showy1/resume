@@ -1,9 +1,8 @@
-<details>
-<summary>
-
 ### {{ title }} ({{ startAt }} ~ {{ endAt }})
 
-</summary>
+<details>
+
+<summary>詳細</summary>
 
 #### サービス概要
 

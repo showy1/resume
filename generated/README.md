@@ -9,15 +9,13 @@
 | 居住地 | 埼玉県 |
 | 学歴 | 東京工業大学 学士課程卒業 &#x2F; 修士課程修了 |
 
-
 ## 参画プロジェクト
-
-<details>
-<summary>
 
 ### AI キャラクターによる 24 時間配信システム (2023-08 ~ )
 
-</summary>
+<details>
+
+<summary>詳細</summary>
 
 #### サービス概要
 
@@ -28,7 +26,6 @@
 - 配信で用いる発話内容生成用 API の開発
 - 配信で用いる発話内容の情報源や画像などを管理するための Web アプリケーション構築全般
 
-
 #### 使用技術
 
 - 言語: Python, TypeScript
@@ -38,14 +35,13 @@
 - IaaS 内サービス: AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM
 - その他: OpenAI API, GitHub Actions, Docker, Slack, Material UI
 
-
 </details>
-<details>
-<summary>
 
 ### NFT コンテンツの開発 (2022-11 ~ 2023-08)
 
-</summary>
+<details>
+
+<summary>詳細</summary>
 
 #### サービス概要
 
@@ -59,7 +55,6 @@
 - microCMS を利用した記事投稿・管理機能の実装
 - Web サイトの UI 実装
 
-
 #### 使用技術
 
 - 言語: TypeScript, Solidity
@@ -69,14 +64,13 @@
 - IaaS 内サービス: Cloud Storage, Cloud SQL, (Cloud Run, Compute Engine)
 - その他: GraphQL, web3-react, MetaMask, Prisma, Tailwind CSS, Docker, Vercel, microCMS, OpenSea, (GitHub Actions, Terraform, Cloud Build, Infura)
 
-
 </details>
-<details>
-<summary>
 
 ### ユーザーと対話可能な AI キャラクターの開発 (2022-11 ~ )
 
-</summary>
+<details>
+
+<summary>詳細</summary>
 
 #### サービス概要
 
@@ -88,7 +82,6 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - 大規模言語モデルや MeCab などを利用した自然言語処理
 - AWS Lambda, DynamoDB などを用いたサーバーレスアプリケーションの構築
 
-
 #### 使用技術
 
 - 言語: Python, C#
@@ -98,14 +91,13 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - IaaS 内サービス: AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon ElastiCache, Amazon API Gateway, AWS CloudFormation, Amazon CloudWatch, AWS IAM
 - その他: MeCab, Unity, Serverless Framework, GitHub Actions, Docker, OpenAI API, Azure OpenAI Service, Slack, (Blender)
 
-
 </details>
-<details>
-<summary>
 
 ### 医療翻訳通話情報管理システムの開発 (2021-05 ~ 2022-10)
 
-</summary>
+<details>
+
+<summary>詳細</summary>
 
 #### サービス概要
 
@@ -116,7 +108,6 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - Go による GraphQL API の開発
 - React, TypeScript, Tailwind CSS を用いた管理画面の開発
 
-
 #### 使用技術
 
 - 言語: Go, TypeScript
@@ -126,14 +117,13 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - IaaS 内サービス: Amazon S3, (Amazon EC2, Amazon RDS)
 - その他: Relay, BitBucket, SendGrid
 
-
 </details>
-<details>
-<summary>
 
 ### 企業向け健康管理サービスの開発 (2021-01 ~ 2022-10)
 
-</summary>
+<details>
+
+<summary>詳細</summary>
 
 #### サービス概要
 
@@ -147,7 +137,6 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - ストレスチェックや健康診断結果の分析機能の開発
 - PM や CS (カスタマーサクセス) からの課題ヒアリングと、それに基づく設計・実装
 
-
 #### 使用技術
 
 - 言語: Python, TypeScript, JavaScript
@@ -157,6 +146,6 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - IaaS 内サービス: Compute Engine, Cloud SQL, Cloud Storage
 - その他: Pandas, Storybook, Sass, BitBucket Pipelines, BitBucket, Nginx, SendGrid, Jira
 
-
 </details>
+
 
