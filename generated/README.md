@@ -9,6 +9,29 @@
 | 居住地 | 埼玉県 |
 | 学歴 | 東京工業大学 学士課程卒業 &#x2F; 修士課程修了 |
 
+## 技術スタック
+
+### 言語
+
+Python, TypeScript, Solidity, C#, Go, JavaScript
+
+### DB
+
+Amazon DynamoDB, PostgreSQL, Redis, MySQL
+
+### フレームワーク等
+
+FastAPI, React, AWS CDK, NestJS, Next.js, Hardhat, gqlgen, Django, Vue.js
+
+### AWS
+
+AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM, Amazon ElastiCache
+
+### その他
+
+OpenAI API, GitHub Actions, Docker, Slack, Material UI, GraphQL, web3-react, MetaMask, Prisma, Tailwind CSS, Vercel, microCMS, OpenSea, MeCab, Unity, Serverless Framework, Azure OpenAI Service, Relay, BitBucket, SendGrid, Pandas, Storybook, Sass, BitBucket Pipelines, Nginx, Jira
+
+
 ## 参画プロジェクト
 
 ### AI キャラクターによる 24 時間配信システム (2023-08 ~ )

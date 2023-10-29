@@ -4,6 +4,10 @@
 
 {{ baseInformation }}
 
+## 技術スタック
+
+{{ technologyStack }}
+
 ## 参画プロジェクト
 
 {{{ projects }}}

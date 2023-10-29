@@ -7,6 +7,14 @@ const tableHeaderMd = `| key | value |
 | --- | --- |
 `;
 
+const technologyStackProperties = [
+  "languages",
+  "db",
+  "mainFrameworks",
+  "awsServices",
+  "others",
+] as const;
+
 type Technologies = (typeof projects)[number]["technologies"];
 
 const technologyPropertyAndNameMap = new Map<keyof Technologies, string>([
@@ -20,10 +28,15 @@ const technologyPropertyAndNameMap = new Map<keyof Technologies, string>([
 
 class MdGenerator {
   private template: string;
+  private technologyStackTemplate: string;
   private projectTemplate: string;
 
   constructor() {
     this.template = readFileSync(`${__dirname}/template.md`, "utf-8");
+    this.technologyStackTemplate = readFileSync(
+      `${__dirname}/technologyStackTemplate.md`,
+      "utf-8"
+    );
     this.projectTemplate = readFileSync(
       `${__dirname}/projectTemplate.md`,
       "utf-8"
@@ -33,6 +46,7 @@ class MdGenerator {
   run() {
     const output = Mustache.render(this.template, {
       baseInformation: this.convBaseInformationToMd(),
+      technologyStack: this.convTechnologyStackToMd(),
       projects: this.convProjectsToMd(),
     });
     writeFileSync(`${__dirname}/../generated/README.md`, output);
@@ -42,6 +56,33 @@ class MdGenerator {
     let output = tableHeaderMd;
     let rows = baseInformation.map((e) => `| ${e.key} | ${e.value} |`);
     return output + rows.join("\n");
+  }
+
+  private convTechnologyStackToMd() {
+    const stack = new Map<
+      (typeof technologyStackProperties)[number],
+      Set<string>
+    >(technologyStackProperties.map((k) => [k, new Set()]));
+
+    for (const project of projects) {
+      for (const k of technologyStackProperties) {
+        if (k === "awsServices") {
+          if (project.technologies.iaas.main[0] !== "AWS") continue;
+          for (const str of project.technologies.iaasServices.main) {
+            stack.get("awsServices")?.add(str);
+          }
+        } else {
+          for (const str of project.technologies[k].main) {
+            stack.get(k)?.add(str);
+          }
+        }
+      }
+    }
+
+    return Mustache.render(
+      this.technologyStackTemplate,
+      Object.fromEntries([...stack].map(([k, v]) => [k, [...v].join(", ")]))
+    );
   }
 
   private convProjectsToMd() {
