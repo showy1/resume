@@ -4,6 +4,10 @@
 
 {{ baseInformation }}
 
+## PR
+
+{{ pr }}
+
 ## 技術スタック
 
 {{ technologyStack }}

@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync } from "fs";
 import Mustache from "mustache";
 import baseInformation from "../data/baseInformation.json";
+import pr from "../data/pr.json";
 import projects from "../data/projects.json";
 
 const tableHeaderMd = `| key | value |
@@ -46,6 +47,7 @@ class MdGenerator {
   run() {
     const output = Mustache.render(this.template, {
       baseInformation: this.convBaseInformationToMd(),
+      pr: this.convPRtoMd(),
       technologyStack: this.convTechnologyStackToMd(),
       projects: this.convProjectsToMd(),
     });
@@ -56,6 +58,10 @@ class MdGenerator {
     let output = tableHeaderMd;
     let rows = baseInformation.map((e) => `| ${e.key} | ${e.value} |`);
     return output + rows.join("\n");
+  }
+
+  private convPRtoMd() {
+    return this.arrToMd(pr);
   }
 
   private convTechnologyStackToMd() {
