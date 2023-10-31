@@ -45,6 +45,8 @@
     "serviceOverview": "オリジナルの SF 作品を基にした NFT コンテンツの提供。",
     "jobResponsibilities": [
       "ERC721, ERC1155 に準拠した NFT コントラクトの開発",
+      "メインネットおよびテストネットへのコントラクトデプロイ",
+      "MerkleProof を利用した AllowList 実装",
       "Web サイトからの NFT Mint 機能の実装",
       "Web サイト上での複数コントラクトの NFT 管理機能の実装",
       "microCMS を利用した記事投稿・管理機能の実装",
@@ -83,6 +85,7 @@
     "jobResponsibilities": [
       "FastAPI/Python による API の開発",
       "大規模言語モデルや MeCab などを利用した自然言語処理",
+      "スクレイピングや Elasticsearch を用いたデータ収集と活用",
       "AWS Lambda, DynamoDB などを用いたサーバーレスアプリケーションの構築"
     ],
     "technologies": {
@@ -96,6 +99,7 @@
           "Amazon ECR",
           "Amazon DynamoDB",
           "Amazon ElastiCache",
+          "Amazon OpenSearch Service",
           "Amazon API Gateway",
           "AWS CloudFormation",
           "Amazon CloudWatch",
@@ -105,6 +109,8 @@
       "others": {
         "main": [
           "MeCab",
+          "Elasticsearch",
+          "Beautiful Soup",
           "Unity",
           "Serverless Framework",
           "GitHub Actions",

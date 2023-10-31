@@ -32,11 +32,11 @@ FastAPI, React, AWS CDK, NestJS, Next.js, Hardhat, gqlgen, Django, Vue.js
 
 ### AWS
 
-AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM, Amazon ElastiCache
+AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM, Amazon ElastiCache, Amazon OpenSearch Service
 
 ### その他
 
-OpenAI API, GitHub Actions, Docker, Slack, Material UI, GraphQL, web3-react, MetaMask, Prisma, Tailwind CSS, Vercel, microCMS, OpenSea, MeCab, Unity, Serverless Framework, Azure OpenAI Service, Relay, BitBucket, SendGrid, Pandas, Storybook, Sass, BitBucket Pipelines, Nginx, Jira
+OpenAI API, GitHub Actions, Docker, Slack, Material UI, GraphQL, web3-react, MetaMask, Prisma, Tailwind CSS, Vercel, microCMS, OpenSea, MeCab, Elasticsearch, Beautiful Soup, Unity, Serverless Framework, Azure OpenAI Service, Relay, BitBucket, SendGrid, Pandas, Storybook, Sass, BitBucket Pipelines, Nginx, Jira
 
 
 ## 参画プロジェクト
@@ -80,6 +80,8 @@ OpenAI API, GitHub Actions, Docker, Slack, Material UI, GraphQL, web3-react, Met
 #### 担当業務
 
 - ERC721, ERC1155 に準拠した NFT コントラクトの開発
+- メインネットおよびテストネットへのコントラクトデプロイ
+- MerkleProof を利用した AllowList 実装
 - Web サイトからの NFT Mint 機能の実装
 - Web サイト上での複数コントラクトの NFT 管理機能の実装
 - microCMS を利用した記事投稿・管理機能の実装
@@ -110,6 +112,7 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 
 - FastAPI&#x2F;Python による API の開発
 - 大規模言語モデルや MeCab などを利用した自然言語処理
+- スクレイピングや Elasticsearch を用いたデータ収集と活用
 - AWS Lambda, DynamoDB などを用いたサーバーレスアプリケーションの構築
 
 #### 使用技術
@@ -118,8 +121,8 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - IaaS: AWS
 - DB: Amazon DynamoDB, Redis
 - フレームワーク・主要ライブラリ: FastAPI
-- IaaS 内サービス: AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon ElastiCache, Amazon API Gateway, AWS CloudFormation, Amazon CloudWatch, AWS IAM
-- その他: MeCab, Unity, Serverless Framework, GitHub Actions, Docker, OpenAI API, Azure OpenAI Service, Slack, (Blender)
+- IaaS 内サービス: AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon ElastiCache, Amazon OpenSearch Service, Amazon API Gateway, AWS CloudFormation, Amazon CloudWatch, AWS IAM
+- その他: MeCab, Elasticsearch, Beautiful Soup, Unity, Serverless Framework, GitHub Actions, Docker, OpenAI API, Azure OpenAI Service, Slack, (Blender)
 
 </details>
 
