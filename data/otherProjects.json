@@ -1,0 +1,19 @@
+[
+  {
+    "title": "AWS の請求情報を Slack により定期通知するシステム",
+    "technologies": {
+      "languages": ["Python"],
+      "iaas": ["AWS"],
+      "iaasServices": ["AWS Lambda", "Amazon EventBridge", "AWS Cost Explorer"],
+      "others": ["Serverless Framework", "Slack"]
+    }
+  },
+  {
+    "title": "エンタメ系企業コーポレートサイトの保守",
+    "technologies": {
+      "languages": ["TypeScript"],
+      "mainFrameworks": ["Gatsby"],
+      "others": ["Netlify", "microCMS"]
+    }
+  }
+]

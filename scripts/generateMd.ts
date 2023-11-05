@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync } from "fs";
 import Mustache from "mustache";
 import baseInformation from "../data/baseInformation.json";
+import otherProjects from "../data/otherProjects.json";
 import pr from "../data/pr.json";
 import projects from "../data/projects.json";
 
@@ -17,8 +18,9 @@ const technologyStackProperties = [
 ] as const;
 
 type Technologies = (typeof projects)[number]["technologies"];
+type TechnologiesKey = keyof Technologies;
 
-const technologyPropertyAndNameMap = new Map<keyof Technologies, string>([
+const technologyPropertyAndNameMap = new Map<TechnologiesKey, string>([
   ["languages", "言語"],
   ["iaas", "IaaS"],
   ["db", "DB"],
@@ -31,6 +33,7 @@ class MdGenerator {
   private template: string;
   private technologyStackTemplate: string;
   private projectTemplate: string;
+  private otherProjectTemplate: string;
 
   constructor() {
     this.template = readFileSync(`${__dirname}/template.md`, "utf-8");
@@ -42,6 +45,10 @@ class MdGenerator {
       `${__dirname}/projectTemplate.md`,
       "utf-8"
     );
+    this.otherProjectTemplate = readFileSync(
+      `${__dirname}/otherProjectTemplate.md`,
+      "utf-8"
+    );
   }
 
   run() {
@@ -50,6 +57,7 @@ class MdGenerator {
       pr: this.convPRtoMd(),
       technologyStack: this.convTechnologyStackToMd(),
       projects: this.convProjectsToMd(),
+      otherProjects: this.convOtherProjectsToMd(),
     });
     writeFileSync(`${__dirname}/../generated/README.md`, output);
   }
@@ -104,6 +112,18 @@ class MdGenerator {
     return output;
   }
 
+  private convOtherProjectsToMd() {
+    let output = "";
+    for (const e of otherProjects) {
+      output +=
+        Mustache.render(this.otherProjectTemplate, {
+          title: e.title,
+          technologies: this.convOtherProjectTechnologiesToMd(e.technologies),
+        }) + "\n";
+    }
+    return output;
+  }
+
   private arrToMd(arr: string[]) {
     return arr.map((e) => `- ${e}`).join("\n");
   }
@@ -111,6 +131,15 @@ class MdGenerator {
   private convTechnologiesToMd(technologies: Technologies) {
     return [...technologyPropertyAndNameMap]
       .map(([k, v]) => `- ${v}: ${this.convTechArrsToStr(technologies[k])}`)
+      .join("\n");
+  }
+
+  private convOtherProjectTechnologiesToMd(
+    technologies: Partial<Record<TechnologiesKey, string[]>>
+  ) {
+    return [...technologyPropertyAndNameMap]
+      .filter(([k]) => technologies[k])
+      .map(([k, v]) => `- ${v}: ${technologies[k]?.join(", ")}`)
       .join("\n");
   }
 
