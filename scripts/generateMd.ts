@@ -20,6 +20,8 @@ const technologyStackProperties = [
 type Technologies = (typeof projects)[number]["technologies"];
 type TechnologiesKey = keyof Technologies;
 
+type OtherProjectTechnologies = Partial<Record<TechnologiesKey, string[]>>;
+
 const technologyPropertyAndNameMap = new Map<TechnologiesKey, string>([
   ["languages", "言語"],
   ["iaas", "IaaS"],
@@ -78,15 +80,30 @@ class MdGenerator {
       Set<string>
     >(technologyStackProperties.map((k) => [k, new Set()]));
 
-    for (const project of projects) {
-      for (const k of technologyStackProperties) {
+    for (const k of technologyStackProperties) {
+      for (const p of projects) {
+        const pTechnologies = p.technologies;
         if (k === "awsServices") {
-          if (project.technologies.iaas.main[0] !== "AWS") continue;
-          for (const str of project.technologies.iaasServices.main) {
+          if (pTechnologies.iaas.main[0] !== "AWS") continue;
+          for (const str of pTechnologies.iaasServices.main) {
             stack.get("awsServices")?.add(str);
           }
         } else {
-          for (const str of project.technologies[k].main) {
+          for (const str of pTechnologies[k].main) {
+            stack.get(k)?.add(str);
+          }
+        }
+      }
+
+      for (const op of otherProjects) {
+        const opTechnologies: OtherProjectTechnologies = op.technologies;
+        if (k === "awsServices") {
+          if (opTechnologies.iaas?.[0] !== "AWS") continue;
+          for (const str of opTechnologies.iaasServices ?? []) {
+            stack.get("awsServices")?.add(str);
+          }
+        } else {
+          for (const str of opTechnologies[k] ?? []) {
             stack.get(k)?.add(str);
           }
         }
@@ -135,7 +152,7 @@ class MdGenerator {
   }
 
   private convOtherProjectTechnologiesToMd(
-    technologies: Partial<Record<TechnologiesKey, string[]>>
+    technologies: OtherProjectTechnologies
   ) {
     return [...technologyPropertyAndNameMap]
       .filter(([k]) => technologies[k])
