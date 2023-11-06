@@ -21,7 +21,7 @@
 
 ### 言語
 
-Python, TypeScript, Solidity, C#, Go, JavaScript
+Python, TypeScript, Solidity, C#, Go, JavaScript, Google Apps Script
 
 ### DB
 
@@ -29,7 +29,7 @@ Amazon DynamoDB, PostgreSQL, Redis, MySQL
 
 ### フレームワーク等
 
-FastAPI, React, AWS CDK, NestJS, Next.js, Hardhat, gqlgen, Django, Vue.js, Gatsby
+FastAPI, React, AWS CDK, NestJS, Next.js, Hardhat, gqlgen, Django, Vue.js, SvelteKit, Gatsby
 
 ### AWS
 
@@ -37,14 +37,14 @@ AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon 
 
 ### その他
 
-OpenAI API, GitHub Actions, Docker, Slack, Material UI, GraphQL, web3-react, MetaMask, Prisma, Tailwind CSS, Vercel, microCMS, OpenSea, MeCab, Elasticsearch, Beautiful Soup, Unity, Serverless Framework, Azure OpenAI Service, Relay, BitBucket, SendGrid, Pandas, Storybook, Sass, BitBucket Pipelines, Nginx, Jira, Netlify
+OpenAI API, GitHub Actions, Docker, Slack, Material UI, GraphQL, web3-react, MetaMask, Prisma, Tailwind CSS, Vercel, microCMS, OpenSea, MeCab, Elasticsearch, Beautiful Soup, Unity, Serverless Framework, Azure OpenAI Service, Relay, BitBucket, SendGrid, Pandas, Storybook, Sass, BitBucket Pipelines, Nginx, Jira, YouTube Data API, Netlify
 
 
 ## 主要参画プロジェクト
 
 数ヶ月以上密に関わったプロジェクトの一覧。
 
-使用技術については、原則自身が使用したものを記載しており、自身の関与度合いが低いものを記載する場合はカッコ内に記載した。
+使用技術については、原則自身が使用したものを記載し、自身の関与度合いが低いものを記載する場合はカッコ内に記載した。
 
 ### AI キャラクターによる 24 時間配信システム (2023-08 ~ )
 
@@ -196,7 +196,7 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 
 短期間作業が発生したプロジェクトの一部と使用技術。
 
-使用技術については、原則自身が使用したものを記載した。
+使用技術については、自身が使用したものを記載した。
 
 ### AWS の請求情報を Slack により定期通知するシステム
 
@@ -204,6 +204,12 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - IaaS: AWS
 - IaaS 内サービス: AWS Lambda, Amazon EventBridge, AWS Cost Explorer
 - その他: Serverless Framework, Slack
+
+### AI キャラクターに関する Web サイトの保守
+
+- 言語: TypeScript, Google Apps Script
+- フレームワーク・主要ライブラリ: SvelteKit
+- その他: Vercel, microCMS, YouTube Data API
 
 ### エンタメ系企業コーポレートサイトの保守
 
