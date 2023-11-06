@@ -9,6 +9,14 @@
     }
   },
   {
+    "title": "AI キャラクターに関する Web サイトの保守",
+    "technologies": {
+      "languages": ["TypeScript", "Google Apps Script"],
+      "mainFrameworks": ["SvelteKit"],
+      "others": ["Vercel", "microCMS", "YouTube Data API"]
+    }
+  },
+  {
     "title": "エンタメ系企業コーポレートサイトの保守",
     "technologies": {
       "languages": ["TypeScript"],
