@@ -1,6 +1,6 @@
 [
   {
-    "title": "AWS の請求情報を Slack により定期通知するシステム",
+    "title": "AWS の請求情報を Slack により定期通知するシステムの開発",
     "technologies": {
       "languages": ["Python"],
       "iaas": ["AWS"],
@@ -22,6 +22,14 @@
       "languages": ["TypeScript"],
       "mainFrameworks": ["Gatsby"],
       "others": ["Netlify", "microCMS"]
+    }
+  },
+  {
+    "title": "特定の Web アプリケーションの使用状況を記録する Chrome 拡張機能と関連するアプリケーションサーバーの開発",
+    "technologies": {
+      "languages": ["TypeScript"],
+      "mainFrameworks": ["CRXJS", "React", "NestJS"],
+      "others": ["GraphQL", "urql"]
     }
   }
 ]

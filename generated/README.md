@@ -35,7 +35,7 @@ Amazon DynamoDB, PostgreSQL, Redis, MySQL
 
 - バックエンド: FastAPI, Django, NestJS, gqlgen
 - フロントエンド: React, Next.js, Vue.js, SvelteKit, Gatsby
-- その他: AWS CDK, Hardhat
+- その他: AWS CDK, Hardhat, CRXJS
 
 ### AWS
 
@@ -44,7 +44,7 @@ AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon 
 ### その他
 
 - バックエンド関連: Prisma, Pandas, MeCab
-- フロントエンド関連: Tailwind CSS, Material UI, Storybook, Relay, Apollo Client, Sass
+- フロントエンド関連: Tailwind CSS, Material UI, Storybook, Relay, Apollo Client, urql, Sass
 - CI/CD ツール: GitHub Actions, BitBucket Pipelines
 - Web3 関連: web3-react, MetaMask, OpenSea
 - その他 XaaS: Slack, Vercel, Netlify, microCMS, OpenAI API, Azure OpenAI Service, SendGrid, YouTube Data API
@@ -229,7 +229,7 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 
 使用技術については、自身が使用したものを記載した。
 
-### AWS の請求情報を Slack により定期通知するシステム
+### AWS の請求情報を Slack により定期通知するシステムの開発
 
 - 言語: Python
 - IaaS: AWS
@@ -247,6 +247,12 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - 言語: TypeScript
 - フレームワーク・主要ライブラリ: Gatsby
 - その他: Netlify, microCMS
+
+### 特定の Web アプリケーションの使用状況を記録する Chrome 拡張機能と関連するアプリケーションサーバーの開発
+
+- 言語: TypeScript
+- フレームワーク・主要ライブラリ: CRXJS, React, NestJS
+- その他: GraphQL, urql
 
 
 

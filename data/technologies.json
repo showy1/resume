@@ -2,7 +2,7 @@
   "mainFrameworks": {
     "backend": ["FastAPI", "Django", "NestJS", "gqlgen"],
     "frontend": ["React", "Next.js", "Vue.js", "SvelteKit", "Gatsby"],
-    "others": ["AWS CDK", "Hardhat"]
+    "others": ["AWS CDK", "Hardhat", "CRXJS"]
   },
   "others": {
     "backend": ["Prisma", "Pandas", "MeCab"],
@@ -12,6 +12,7 @@
       "Storybook",
       "Relay",
       "Apollo Client",
+      "urql",
       "Sass"
     ],
     "cicd": ["GitHub Actions", "BitBucket Pipelines"],
