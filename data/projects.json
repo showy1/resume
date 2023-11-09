@@ -4,6 +4,7 @@
     "endAt": null,
     "title": "AI キャラクターによる 24 時間配信システム",
     "serviceOverview": "動画・ライブ配信プラットフォーム上で AI キャラクターが 24 時間配信を行うエンタメコンテンツ。",
+    "members": { "engineers": 2, "devTeam": 5 },
     "jobResponsibilities": [
       "配信で用いる発話内容生成用 API の開発",
       "配信で用いる発話内容の情報源や画像などを管理するための Web アプリケーション構築全般"
@@ -43,6 +44,7 @@
     "endAt": "2023-08",
     "title": "NFT コンテンツの開発",
     "serviceOverview": "オリジナルの SF 作品を基にした NFT コンテンツの提供。",
+    "members": { "engineers": 3, "devTeam": 7 },
     "jobResponsibilities": [
       "ERC721, ERC1155 に準拠した NFT コントラクトの開発",
       "メインネットおよびテストネットへのコントラクトデプロイ",
@@ -83,6 +85,7 @@
     "endAt": null,
     "title": "ユーザーと対話可能な AI キャラクターの開発",
     "serviceOverview": "AI キャラクターの育成・コミュニケーション体験などのエンタメコンテンツの提供。",
+    "members": { "engineers": 7, "devTeam": 12 },
     "jobResponsibilities": [
       "FastAPI/Python による API の開発",
       "大規模言語モデルや MeCab などを利用した自然言語処理",
@@ -128,6 +131,7 @@
     "endAt": "2022-10",
     "title": "医療翻訳通話情報管理システムの開発",
     "serviceOverview": "医療機関における外国人患者の診療の際に使用できる医療翻訳通話システムの提供。",
+    "members": { "engineers": 2, "devTeam": 2 },
     "jobResponsibilities": [
       "Go による GraphQL API の開発",
       "React, TypeScript, Tailwind CSS を用いた管理画面の開発"
@@ -149,6 +153,7 @@
     "endAt": "2022-10",
     "title": "企業向け健康管理サービスの開発",
     "serviceOverview": "健康診断結果の管理、健康診断予約情報の管理、ストレスチェックの実施・結果管理などの機能を有する Web サービスの提供。",
+    "members": { "engineers": 10, "devTeam": 15 },
     "jobResponsibilities": [
       "Django/Python, Vue.js/TypeScript/JavaScript を用いた Web アプリケーションの開発",
       "GCP, Nginx などを用いたインフラ構築",

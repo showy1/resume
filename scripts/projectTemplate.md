@@ -8,6 +8,10 @@
 
 {{ serviceOverview }}
 
+#### チーム規模
+
+{{ members }}
+
 #### 担当業務
 
 {{{ jobResponsibilities }}}

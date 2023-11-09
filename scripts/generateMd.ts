@@ -150,6 +150,9 @@ class MdGenerator {
       output +=
         Mustache.render(this.projectTemplate, {
           ...e,
+          members: `エンジニア: ${this.numToMemberStr(
+            e.members.engineers
+          )}, 開発チーム全体: ${this.numToMemberStr(e.members.devTeam)}`,
           jobResponsibilities: this.arrToMd(e.jobResponsibilities),
           technologies: this.convTechnologiesToMd(e.technologies),
         }) + "\n";
@@ -167,6 +170,10 @@ class MdGenerator {
         }) + "\n";
     }
     return output;
+  }
+
+  private numToMemberStr(num: number) {
+    return (num > 5 ? `約${num}` : num) + "人";
   }
 
   private arrToMd(arr: string[]) {
