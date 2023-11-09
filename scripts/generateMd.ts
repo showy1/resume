@@ -4,6 +4,7 @@ import baseInformation from "../data/baseInformation.json";
 import otherProjects from "../data/otherProjects.json";
 import pr from "../data/pr.json";
 import projects from "../data/projects.json";
+import technologies from "../data/technologies.json";
 
 const tableHeaderMd = `| key | value |
 | --- | --- |
@@ -110,10 +111,35 @@ class MdGenerator {
       }
     }
 
-    return Mustache.render(
-      this.technologyStackTemplate,
-      Object.fromEntries([...stack].map(([k, v]) => [k, [...v].join(", ")]))
-    );
+    const techMainFrameworks = Object.values(
+      technologies.mainFrameworks
+    ).flat();
+    for (const e of stack.get("mainFrameworks")!) {
+      if (!techMainFrameworks.includes(e)) {
+        throw new Error(`${e} is not included in technologies.mainFrameworks`);
+      }
+    }
+    const techOthers = Object.values(technologies.others).flat();
+    for (const e of stack.get("others")!) {
+      if (!techOthers.includes(e)) {
+        throw new Error(`${e} is not included in technologies.others`);
+      }
+    }
+
+    return Mustache.render(this.technologyStackTemplate, {
+      languages: [...stack.get("languages")!].join(", "),
+      db: [...stack.get("db")!].join(", "),
+      backendMainFrameworks: technologies.mainFrameworks.backend.join(", "),
+      frontendMainFrameworks: technologies.mainFrameworks.frontend.join(", "),
+      otherMainFrameworks: technologies.mainFrameworks.others.join(", "),
+      awsServices: [...stack.get("awsServices")!].join(", "),
+      backendOthers: technologies.others.backend.join(", "),
+      frontendOthers: technologies.others.frontend.join(", "),
+      cicdOthers: technologies.others.cicd.join(", "),
+      web3Others: technologies.others.web3.join(", "),
+      xaasOthers: technologies.others.xaas.join(", "),
+      otherOthers: technologies.others.others.join(", "),
+    });
   }
 
   private convProjectsToMd() {
@@ -145,18 +171,16 @@ class MdGenerator {
     return arr.map((e) => `- ${e}`).join("\n");
   }
 
-  private convTechnologiesToMd(technologies: Technologies) {
+  private convTechnologiesToMd(ts: Technologies) {
     return [...technologyPropertyAndNameMap]
-      .map(([k, v]) => `- ${v}: ${this.convTechArrsToStr(technologies[k])}`)
+      .map(([k, v]) => `- ${v}: ${this.convTechArrsToStr(ts[k])}`)
       .join("\n");
   }
 
-  private convOtherProjectTechnologiesToMd(
-    technologies: OtherProjectTechnologies
-  ) {
+  private convOtherProjectTechnologiesToMd(ts: OtherProjectTechnologies) {
     return [...technologyPropertyAndNameMap]
-      .filter(([k]) => technologies[k])
-      .map(([k, v]) => `- ${v}: ${technologies[k]?.join(", ")}`)
+      .filter(([k]) => ts[k])
+      .map(([k, v]) => `- ${v}: ${ts[k]?.join(", ")}`)
       .join("\n");
   }
 

@@ -8,7 +8,9 @@
 
 ### フレームワーク等
 
-{{ mainFrameworks }}
+- バックエンド: {{ backendMainFrameworks }}
+- フロントエンド: {{ frontendMainFrameworks }}
+- その他: {{ otherMainFrameworks }}
 
 ### AWS
 
@@ -16,4 +18,9 @@
 
 ### その他
 
-{{ others }}
+- バックエンド関連: {{ backendOthers }}
+- フロントエンド関連: {{ frontendOthers }}
+- CI/CD ツール: {{ cicdOthers }}
+- Web3 関連: {{ web3Others }}
+- その他 XaaS: {{ xaasOthers }}
+- その他: {{ otherOthers }}

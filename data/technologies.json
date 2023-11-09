@@ -1,0 +1,38 @@
+{
+  "mainFrameworks": {
+    "backend": ["FastAPI", "Django", "NestJS", "gqlgen"],
+    "frontend": ["React", "Next.js", "Vue.js", "SvelteKit", "Gatsby"],
+    "others": ["AWS CDK", "Hardhat"]
+  },
+  "others": {
+    "backend": ["Prisma", "Pandas", "MeCab"],
+    "frontend": [
+      "Tailwind CSS",
+      "Material UI",
+      "Storybook",
+      "Relay",
+      "Apollo Client",
+      "Sass"
+    ],
+    "cicd": ["GitHub Actions", "BitBucket Pipelines"],
+    "web3": ["web3-react", "MetaMask", "OpenSea"],
+    "xaas": [
+      "Slack",
+      "Vercel",
+      "Netlify",
+      "microCMS",
+      "OpenAI API",
+      "Azure OpenAI Service",
+      "SendGrid",
+      "YouTube Data API"
+    ],
+    "others": [
+      "GraphQL",
+      "Docker",
+      "Elasticsearch",
+      "Serverless Framework",
+      "Unity",
+      "Nginx"
+    ]
+  }
+}
