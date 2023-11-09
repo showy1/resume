@@ -7,7 +7,7 @@
 | 氏名 | Shoichi Yoshitomi |
 | 職業 | エンジニア |
 | 居住地 | 埼玉県 |
-| 学歴 | 東京工業大学 学士課程卒業 &#x2F; 修士課程修了 |
+| 学歴 | 東京工業大学 学士課程卒業 / 修士課程修了 |
 
 ## PR
 
@@ -29,7 +29,9 @@ Amazon DynamoDB, PostgreSQL, Redis, MySQL
 
 ### フレームワーク等
 
-FastAPI, React, AWS CDK, NestJS, Next.js, Hardhat, gqlgen, Django, Vue.js, SvelteKit, Gatsby
+- バックエンド: FastAPI, Django, NestJS, gqlgen
+- フロントエンド: React, Next.js, Vue.js, SvelteKit, Gatsby
+- その他: AWS CDK, Hardhat
 
 ### AWS
 
@@ -37,7 +39,12 @@ AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon 
 
 ### その他
 
-OpenAI API, GitHub Actions, Docker, Slack, Material UI, GraphQL, web3-react, MetaMask, Prisma, Tailwind CSS, Vercel, microCMS, OpenSea, MeCab, Elasticsearch, Beautiful Soup, Unity, Serverless Framework, Azure OpenAI Service, Relay, BitBucket, SendGrid, Pandas, Storybook, Sass, BitBucket Pipelines, Nginx, Jira, YouTube Data API, Netlify
+- バックエンド関連: Prisma, Pandas, MeCab
+- フロントエンド関連: Tailwind CSS, Material UI, Storybook, Relay, Apollo Client, Sass
+- CI/CD ツール: GitHub Actions, BitBucket Pipelines
+- Web3 関連: web3-react, MetaMask, OpenSea
+- その他 XaaS: Slack, Vercel, Netlify, microCMS, OpenAI API, Azure OpenAI Service, SendGrid, YouTube Data API
+- その他: GraphQL, Docker, Elasticsearch, Serverless Framework, Unity, Nginx
 
 
 ## 主要参画プロジェクト
@@ -99,7 +106,7 @@ OpenAI API, GitHub Actions, Docker, Slack, Material UI, GraphQL, web3-react, Met
 - DB: PostgreSQL
 - フレームワーク・主要ライブラリ: NestJS, Next.js, Hardhat
 - IaaS 内サービス: Cloud Storage, Cloud SQL, (Cloud Run, Compute Engine)
-- その他: GraphQL, web3-react, MetaMask, Prisma, Tailwind CSS, Docker, Vercel, microCMS, OpenSea, (GitHub Actions, Terraform, Cloud Build, Infura)
+- その他: GraphQL, web3-react, MetaMask, Prisma, Tailwind CSS, Apollo Client, Docker, Vercel, microCMS, OpenSea, (GitHub Actions, Terraform, Cloud Build, Infura)
 
 </details>
 
@@ -115,7 +122,7 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 
 #### 担当業務
 
-- FastAPI&#x2F;Python による API の開発
+- FastAPI/Python による API の開発
 - 大規模言語モデルや MeCab などを利用した自然言語処理
 - スクレイピングや Elasticsearch を用いたデータ収集と活用
 - AWS Lambda, DynamoDB などを用いたサーバーレスアプリケーションの構築
@@ -127,7 +134,7 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - DB: Amazon DynamoDB, Redis
 - フレームワーク・主要ライブラリ: FastAPI
 - IaaS 内サービス: AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon ElastiCache, Amazon OpenSearch Service, Amazon API Gateway, AWS CloudFormation, Amazon CloudWatch, AWS IAM
-- その他: MeCab, Elasticsearch, Beautiful Soup, Unity, Serverless Framework, GitHub Actions, Docker, OpenAI API, Azure OpenAI Service, Slack, (Blender)
+- その他: MeCab, Elasticsearch, Unity, Serverless Framework, GitHub Actions, Docker, OpenAI API, Azure OpenAI Service, Slack, (Blender)
 
 </details>
 
@@ -153,7 +160,7 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - DB: PostgreSQL
 - フレームワーク・主要ライブラリ: gqlgen, React
 - IaaS 内サービス: Amazon S3, (Amazon EC2, Amazon RDS)
-- その他: Relay, BitBucket, SendGrid
+- その他: Relay, SendGrid
 
 </details>
 
@@ -169,7 +176,7 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 
 #### 担当業務
 
-- Django&#x2F;Python, Vue.js&#x2F;TypeScript&#x2F;JavaScript を用いた Web アプリケーションの開発
+- Django/Python, Vue.js/TypeScript/JavaScript を用いた Web アプリケーションの開発
 - GCP, Nginx などを用いたインフラ構築
 - Bitbucket Pipelines を用いた CI パイプライン構築
 - ストレスチェックや健康診断結果の分析機能の開発
@@ -182,7 +189,7 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - DB: MySQL
 - フレームワーク・主要ライブラリ: Django, Vue.js
 - IaaS 内サービス: Compute Engine, Cloud SQL, Cloud Storage
-- その他: Pandas, Storybook, Sass, BitBucket Pipelines, BitBucket, Nginx, SendGrid, Jira
+- その他: Pandas, Storybook, Sass, BitBucket Pipelines, Nginx, SendGrid
 
 </details>
 
