@@ -8,6 +8,10 @@
 
 {{ pr }}
 
+## 開発環境・主要ツール
+
+{{ devTools }}
+
 ## 技術スタック
 
 {{{ technologyStack }}}

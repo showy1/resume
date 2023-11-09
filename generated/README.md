@@ -17,6 +17,10 @@
 - 未経験の技術や領域であっても、主体的かつ短期間でのキャッチアップが可能。
 - 技術だけでなく事業自体にも関心を持って開発に携わりたいと考えている。
 
+## 開発環境・主要ツール
+
+MacBook with M1 Chip, Visual Studio Code, ChatGPT, GitHub Copilot
+
 ## 技術スタック
 
 ### 言語

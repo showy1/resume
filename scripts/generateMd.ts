@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync } from "fs";
 import Mustache from "mustache";
 import baseInformation from "../data/baseInformation.json";
+import devTools from "../data/devTools.json";
 import otherProjects from "../data/otherProjects.json";
 import pr from "../data/pr.json";
 import projects from "../data/projects.json";
@@ -58,6 +59,7 @@ class MdGenerator {
     const output = Mustache.render(this.template, {
       baseInformation: this.convBaseInformationToMd(),
       pr: this.convPRtoMd(),
+      devTools: devTools.join(", "),
       technologyStack: this.convTechnologyStackToMd(),
       projects: this.convProjectsToMd(),
       otherProjects: this.convOtherProjectsToMd(),
