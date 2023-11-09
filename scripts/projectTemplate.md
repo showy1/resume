@@ -10,7 +10,7 @@
 
 #### 担当業務
 
-{{ jobResponsibilities }}
+{{{ jobResponsibilities }}}
 
 #### 使用技術
 

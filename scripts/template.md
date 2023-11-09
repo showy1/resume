@@ -2,7 +2,7 @@
 
 ## 基本情報
 
-{{ baseInformation }}
+{{{ baseInformation }}}
 
 ## PR
 
@@ -10,7 +10,7 @@
 
 ## 技術スタック
 
-{{ technologyStack }}
+{{{ technologyStack }}}
 
 ## 主要参画プロジェクト
 
