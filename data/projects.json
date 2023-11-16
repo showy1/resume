@@ -34,6 +34,8 @@
           "GitHub Actions",
           "Docker",
           "Slack",
+          "pytest",
+          "Vitest",
           "Material UI"
         ]
       }
@@ -173,6 +175,7 @@
         "main": [
           "Pandas",
           "Storybook",
+          "Cypress",
           "Sass",
           "BitBucket Pipelines",
           "Nginx",

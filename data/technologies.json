@@ -5,10 +5,12 @@
     "others": ["AWS CDK", "Hardhat", "CRXJS"]
   },
   "others": {
-    "backend": ["Prisma", "Pandas", "MeCab"],
+    "backend": ["Prisma", "Pandas", "MeCab", "pytest"],
     "frontend": [
       "Tailwind CSS",
       "Material UI",
+      "Vitest",
+      "Cypress",
       "Storybook",
       "Relay",
       "Apollo Client",

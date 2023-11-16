@@ -43,8 +43,8 @@ AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon 
 
 ### その他
 
-- バックエンド関連: Prisma, Pandas, MeCab
-- フロントエンド関連: Tailwind CSS, Material UI, Storybook, Relay, Apollo Client, urql, Sass
+- バックエンド関連: Prisma, Pandas, MeCab, pytest
+- フロントエンド関連: Tailwind CSS, Material UI, Vitest, Cypress, Storybook, Relay, Apollo Client, urql, Sass
 - CI/CD ツール: GitHub Actions, BitBucket Pipelines
 - Web3 関連: web3-react, MetaMask, OpenSea
 - その他 XaaS: Slack, Vercel, Netlify, microCMS, OpenAI API, Azure OpenAI Service, SendGrid, YouTube Data API
@@ -83,7 +83,7 @@ AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon 
 - DB: Amazon DynamoDB
 - フレームワーク・主要ライブラリ: FastAPI, React, AWS CDK
 - IaaS 内サービス: AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM
-- その他: OpenAI API, GitHub Actions, Docker, Slack, Material UI
+- その他: OpenAI API, GitHub Actions, Docker, Slack, pytest, Vitest, Material UI
 
 </details>
 
@@ -213,7 +213,7 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - DB: MySQL
 - フレームワーク・主要ライブラリ: Django, Vue.js
 - IaaS 内サービス: Compute Engine, Cloud SQL, Cloud Storage
-- その他: Pandas, Storybook, Sass, BitBucket Pipelines, Nginx, SendGrid
+- その他: Pandas, Storybook, Cypress, Sass, BitBucket Pipelines, Nginx, SendGrid
 
 </details>
 
