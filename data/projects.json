@@ -21,6 +21,8 @@
           "Amazon DynamoDB",
           "Amazon SQS",
           "Amazon API Gateway",
+          "Amazon Bedrock",
+          "Amazon OpenSearch Serverless",
           "Amazon S3",
           "Amazon CloudFront",
           "AWS CloudFormation",

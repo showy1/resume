@@ -39,7 +39,7 @@ Amazon DynamoDB, PostgreSQL, Redis, MySQL
 
 ### AWS
 
-AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM, Amazon ElastiCache, Amazon OpenSearch Service, Amazon EventBridge, AWS Cost Explorer
+AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon Bedrock, Amazon OpenSearch Serverless, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM, Amazon ElastiCache, Amazon OpenSearch Service, Amazon EventBridge, AWS Cost Explorer
 
 ### その他
 
@@ -82,7 +82,7 @@ AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon 
 - IaaS: AWS
 - DB: Amazon DynamoDB
 - フレームワーク・主要ライブラリ: FastAPI, React, AWS CDK
-- IaaS 内サービス: AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM
+- IaaS 内サービス: AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon Bedrock, Amazon OpenSearch Serverless, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM
 - その他: OpenAI API, GitHub Actions, Docker, Slack, pytest, Vitest, Material UI
 
 </details>
