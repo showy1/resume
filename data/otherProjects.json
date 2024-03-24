@@ -1,5 +1,13 @@
 [
   {
+    "title": "コーポレートサイトのリニューアル",
+    "technologies": {
+      "languages": ["TypeScript", "Google Apps Script"],
+      "mainFrameworks": ["Next.js", "Gatsby"],
+      "others": ["Vercel", "Netlify", "microCMS", "Tailwind CSS"]
+    }
+  },
+  {
     "title": "AWS の請求情報を Slack により定期通知するシステムの開発",
     "technologies": {
       "languages": ["Python"],
