@@ -1,7 +1,7 @@
 {
   "mainFrameworks": {
     "backend": ["FastAPI", "Django", "NestJS", "gqlgen"],
-    "frontend": ["React", "Next.js", "Vue.js", "SvelteKit", "Gatsby"],
+    "frontend": ["React", "Next.js", "Vue.js", "SvelteKit", "Gatsby", "Docusaurus", "Streamlit"],
     "others": ["AWS CDK", "Hardhat", "CRXJS"]
   },
   "others": {
@@ -15,12 +15,14 @@
       "Relay",
       "Apollo Client",
       "urql",
+      "Three.js",
       "Sass"
     ],
     "cicd": ["GitHub Actions", "BitBucket Pipelines"],
     "web3": ["web3-react", "MetaMask", "OpenSea"],
     "xaas": [
       "Slack",
+      "Microsoft Teams",
       "Vercel",
       "Netlify",
       "microCMS",

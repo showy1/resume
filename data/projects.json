@@ -1,5 +1,60 @@
 [
   {
+    "startAt": "2024-02",
+    "endAt": null,
+    "title": "自社サービスに関するドキュメントサイトとその知識を基にした Q&A bot の開発",
+    "serviceOverview": "ある自社サービスに関する理解の促進や不明点の解消を目的とした、社内外のユーザーが使用できる、ドキュメントサイトとその知識を基にした Q&A bot の提供。",
+    "members": { "engineers": 3, "devTeam": 8 },
+    "jobResponsibilities": [
+      "Docusaurus を用いたドキュメントサイトの開発",
+      "RAG 技術を活用した Q&A bot の開発"
+    ],
+    "technologies": {
+      "languages": { "main": ["Python", "TypeScript"] },
+      "iaas": { "main": ["AWS"] },
+      "db": { "main": ["Qdrant"] },
+      "mainFrameworks": { "main": ["FastAPI", "Streamlit", "Docusaurus"] },
+      "iaasServices": {
+        "main": [
+          "AWS WAF"
+        ],
+        "sub": [
+          "Amazon EKS"
+        ]
+      },
+      "others": {
+        "main": [
+          "OpenAI API",
+          "Nginx",
+          "GitHub Actions",
+          "Docker",
+          "Microsoft Teams"
+        ]
+      }
+    }
+  },
+  {
+    "startAt": "2024-02",
+    "endAt": null,
+    "title": "Q&A bot 機能を有する 3D AI キャラクターと対話できる Web アプリケーションの開発",
+    "serviceOverview": "ある Web サービスに関する Q&A bot としての機能やその他雑談機能を有する 3D AI キャラクターと、 Web 上でテキストまたは音声入力により対話するための Web アプリケーション。",
+    "members": { "engineers": 5, "devTeam": 10 },
+    "jobResponsibilities": [
+      "3D 描画を含む Web アプリケーションのフロントエンド開発全般"
+    ],
+    "technologies": {
+      "languages": { "main": ["TypeScript"] },
+      "mainFrameworks": { "main": ["Next.js"] },
+      "others": {
+        "main": [
+          "Vercel",
+          "Three.js",
+          "Tailwind CSS"
+        ]
+      }
+    }
+  },
+  {
     "startAt": "2023-08",
     "endAt": null,
     "title": "AI キャラクターによる 24 時間配信システム",
@@ -86,7 +141,7 @@
   },
   {
     "startAt": "2022-11",
-    "endAt": null,
+    "endAt": "2024-01",
     "title": "ユーザーと対話可能な AI キャラクターの開発",
     "serviceOverview": "AI キャラクターの育成・コミュニケーション体験などのエンタメコンテンツの提供。",
     "members": { "engineers": 7, "devTeam": 12 },
