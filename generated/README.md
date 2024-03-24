@@ -19,7 +19,7 @@
 
 ## 開発環境・主要ツール
 
-MacBook with M1 Chip, Visual Studio Code, ChatGPT, GitHub Copilot
+MacBook, Visual Studio Code, ChatGPT, Claude, GitHub Copilot
 
 ## 技術スタック
 
@@ -29,25 +29,25 @@ Python, TypeScript, Solidity, C#, Go, JavaScript, Google Apps Script
 
 ### DB
 
-Amazon DynamoDB, PostgreSQL, Redis, MySQL
+Qdrant, Amazon DynamoDB, PostgreSQL, Redis, MySQL
 
 ### フレームワーク等
 
 - バックエンド: FastAPI, Django, NestJS, gqlgen
-- フロントエンド: React, Next.js, Vue.js, SvelteKit, Gatsby
+- フロントエンド: React, Next.js, Vue.js, SvelteKit, Gatsby, Docusaurus, Streamlit
 - その他: AWS CDK, Hardhat, CRXJS
 
 ### AWS
 
-AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon Bedrock, Amazon OpenSearch Serverless, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM, Amazon ElastiCache, Amazon OpenSearch Service, Amazon EventBridge, AWS Cost Explorer
+AWS WAF, AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon Bedrock, Amazon OpenSearch Serverless, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM, Amazon ElastiCache, Amazon OpenSearch Service, Amazon EventBridge, AWS Cost Explorer
 
 ### その他
 
 - バックエンド関連: Prisma, Pandas, MeCab, pytest
-- フロントエンド関連: Tailwind CSS, Material UI, Vitest, Cypress, Storybook, Relay, Apollo Client, urql, Sass
+- フロントエンド関連: Tailwind CSS, Material UI, Vitest, Cypress, Storybook, Relay, Apollo Client, urql, Three.js, Sass
 - CI/CD ツール: GitHub Actions, BitBucket Pipelines
 - Web3 関連: web3-react, MetaMask, OpenSea
-- その他 XaaS: Slack, Vercel, Netlify, microCMS, OpenAI API, Azure OpenAI Service, SendGrid, YouTube Data API
+- その他 XaaS: Slack, Microsoft Teams, Vercel, Netlify, microCMS, OpenAI API, Azure OpenAI Service, SendGrid, YouTube Data API
 - その他: GraphQL, Docker, Elasticsearch, Serverless Framework, Unity, Nginx
 
 
@@ -56,6 +56,64 @@ AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon 
 数ヶ月以上密に関わったプロジェクトの一覧。
 
 使用技術については、原則自身が使用したものを記載し、自身の関与度合いが低いものを記載する場合はカッコ内に記載した。
+
+### 自社サービスに関するドキュメントサイトとその知識を基にした Q&amp;A bot の開発 (2024-02 ~ )
+
+<details>
+
+<summary>詳細</summary>
+
+#### サービス概要
+
+ある自社サービスに関する理解の促進や不明点の解消を目的とした、社内外のユーザーが使用できる、ドキュメントサイトとその知識を基にした Q&amp;A bot の提供。
+
+#### チーム規模
+
+エンジニア: 3人, 開発チーム全体: 約8人
+
+#### 担当業務
+
+- Docusaurus を用いたドキュメントサイトの開発
+- RAG 技術を活用した Q&A bot の開発
+
+#### 使用技術
+
+- 言語: Python, TypeScript
+- IaaS: AWS
+- DB: Qdrant
+- フレームワーク・主要ライブラリ: FastAPI, Streamlit, Docusaurus
+- IaaS 内サービス: AWS WAF, (Amazon EKS)
+- その他: OpenAI API, Nginx, GitHub Actions, Docker, Microsoft Teams
+
+
+</details>
+
+### Q&amp;A bot 機能を有する 3D AI キャラクターと対話できる Web アプリケーションの開発 (2024-02 ~ )
+
+<details>
+
+<summary>詳細</summary>
+
+#### サービス概要
+
+ある Web サービスに関する Q&amp;A bot としての機能やその他雑談機能を有する 3D AI キャラクターと、 Web 上でテキストまたは音声入力により対話するための Web アプリケーション。
+
+#### チーム規模
+
+エンジニア: 5人, 開発チーム全体: 約10人
+
+#### 担当業務
+
+- 3D 描画を含む Web アプリケーションのフロントエンド開発全般
+
+#### 使用技術
+
+- 言語: TypeScript
+- フレームワーク・主要ライブラリ: Next.js
+- その他: Vercel, Three.js, Tailwind CSS
+
+
+</details>
 
 ### AI キャラクターによる 24 時間配信システム (2023-08 ~ )
 
@@ -84,6 +142,7 @@ AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon 
 - フレームワーク・主要ライブラリ: FastAPI, React, AWS CDK
 - IaaS 内サービス: AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon Bedrock, Amazon OpenSearch Serverless, Amazon S3, Amazon CloudFront, AWS CloudFormation, Amazon CloudWatch, AWS IAM
 - その他: OpenAI API, GitHub Actions, Docker, Slack, pytest, Vitest, Material UI
+
 
 </details>
 
@@ -120,9 +179,10 @@ AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon SQS, Amazon API Gateway, Amazon 
 - IaaS 内サービス: Cloud Storage, Cloud SQL, (Cloud Run, Compute Engine)
 - その他: GraphQL, web3-react, MetaMask, Prisma, Tailwind CSS, Apollo Client, Docker, Vercel, microCMS, OpenSea, (GitHub Actions, Terraform, Cloud Build, Infura)
 
+
 </details>
 
-### ユーザーと対話可能な AI キャラクターの開発 (2022-11 ~ )
+### ユーザーと対話可能な AI キャラクターの開発 (2022-11 ~ 2024-01)
 
 <details>
 
@@ -151,6 +211,7 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - フレームワーク・主要ライブラリ: FastAPI
 - IaaS 内サービス: AWS Lambda, Amazon ECR, Amazon DynamoDB, Amazon ElastiCache, Amazon OpenSearch Service, Amazon API Gateway, AWS CloudFormation, Amazon CloudWatch, AWS IAM
 - その他: MeCab, Elasticsearch, Unity, Serverless Framework, GitHub Actions, Docker, OpenAI API, Azure OpenAI Service, Slack, (Blender)
+
 
 </details>
 
@@ -181,6 +242,7 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - フレームワーク・主要ライブラリ: gqlgen, React
 - IaaS 内サービス: Amazon S3, (Amazon EC2, Amazon RDS)
 - その他: Relay, SendGrid
+
 
 </details>
 
@@ -215,6 +277,7 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 - IaaS 内サービス: Compute Engine, Cloud SQL, Cloud Storage
 - その他: Pandas, Storybook, Cypress, Sass, BitBucket Pipelines, Nginx, SendGrid
 
+
 </details>
 
 
@@ -228,6 +291,12 @@ AI キャラクターの育成・コミュニケーション体験などのエ�
 短期間作業が発生したプロジェクトの一部と使用技術。
 
 使用技術については、自身が使用したものを記載した。
+
+### コーポレートサイトのリニューアル
+
+- 言語: TypeScript, Google Apps Script
+- フレームワーク・主要ライブラリ: Next.js, Gatsby
+- その他: Vercel, Netlify, microCMS, Tailwind CSS
 
 ### AWS の請求情報を Slack により定期通知するシステムの開発
 
