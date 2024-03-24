@@ -87,12 +87,12 @@ class MdGenerator {
       for (const p of projects) {
         const pTechnologies = p.technologies;
         if (k === "awsServices") {
-          if (pTechnologies.iaas.main[0] !== "AWS") continue;
+          if (!pTechnologies.iaas || pTechnologies.iaas.main?.[0] !== "AWS") continue;
           for (const str of pTechnologies.iaasServices.main) {
             stack.get("awsServices")?.add(str);
           }
         } else {
-          for (const str of pTechnologies[k].main) {
+          for (const str of pTechnologies[k]?.main ?? []) {
             stack.get(k)?.add(str);
           }
         }
@@ -182,8 +182,11 @@ class MdGenerator {
 
   private convTechnologiesToMd(ts: Technologies) {
     return [...technologyPropertyAndNameMap]
-      .map(([k, v]) => `- ${v}: ${this.convTechArrsToStr(ts[k])}`)
-      .join("\n");
+    .reduce((acc, [k, v]) => {
+      const t = ts[k]
+      if (!t) return acc
+      return `${acc}- ${v}: ${this.convTechArrsToStr(t)}\n`
+    }, "")
   }
 
   private convOtherProjectTechnologiesToMd(ts: OtherProjectTechnologies) {
